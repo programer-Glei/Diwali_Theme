@@ -41,3 +41,34 @@ html{
 ::-webkit-scrollbar-thumb{
     background-color: $--black;
 }
+
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 10;
+    background-color: $--white;
+
+    .flex{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo{
+            img{
+                height: 8rem;
+            }
+        }
+    }
+
+    .navbar{
+        margin-left: 2rem;
+    }
+}
