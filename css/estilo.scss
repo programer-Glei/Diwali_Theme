@@ -13,4 +13,8 @@ $--gradient: linear-gradient(90deg, $--orange, $--yellow);
 
 *{
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    margin: 0; padding: 0;
 }
