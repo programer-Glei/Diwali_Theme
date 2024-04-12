@@ -72,13 +72,13 @@ section {
   height: 8rem;
 }
 
-.header .navbar a {
+.header .flex .navbar a {
   margin-left: 2rem;
   font-size: 2rem;
   color: #333;
 }
 
-.header .navbar a:hover {
+.header .flex .navbar a:hover {
   color: #FF4600;
 }
 
@@ -99,6 +99,24 @@ section {
 @media (max-width: 768px) {
   #menu-btn {
     display: inline-block;
+  }
+  .header {
+    position: relative;
+  }
+  .header .flex .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .flex .navbar a {
+    display: block;
+    margin: 2rem;
   }
 }
 

@@ -66,16 +66,16 @@ section{
                 height: 8rem;
             }
         }
-    }
 
-    .navbar{
-        a{
-            margin-left: 2rem;
-            font-size: 2rem;
-            color: $--black;
-
-            &:hover{
-                color: $--orange;
+        .navbar{
+            a{
+                margin-left: 2rem;
+                font-size: 2rem;
+                color: $--black;
+    
+                &:hover{
+                    color: $--orange;
+                }
             }
         }
     }
@@ -98,6 +98,27 @@ section{
 @media(max-width:768px){
     #menu-btn{
         display: inline-block;
+    }
+
+    .header{
+        position: relative;
+
+        .flex{
+
+            .navbar{
+                position: absolute;
+                top: 99%; left: 0; right: 0;
+                background-color: $--white;
+                border-top: $--border;
+                border-bottom: $--border;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+                a{
+                    display: block;
+                    margin: 2rem;
+                }
+            }
+        }
     }
 }
 
