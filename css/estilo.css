@@ -99,6 +99,12 @@ section {
 @media (max-width: 768px) {
   #menu-btn {
     display: inline-block;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
+  }
+  #menu-btn.fa-times {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   .header {
     position: relative;
@@ -113,10 +119,16 @@ section {
     border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
   }
   .header .flex .navbar a {
     display: block;
     margin: 2rem;
+  }
+  .header .flex .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 
