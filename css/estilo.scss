@@ -69,6 +69,40 @@ section{
     }
 
     .navbar{
-        margin-left: 2rem;
+        a{
+            margin-left: 2rem;
+            font-size: 2rem;
+            color: $--black;
+
+            &:hover{
+                color: $--orange;
+            }
+        }
+    }
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: $--black;
+    display: none;
+}
+
+/* media queries */
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
     }
 }
