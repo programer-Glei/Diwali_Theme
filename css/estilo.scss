@@ -51,8 +51,13 @@ section{
 .header{
     position: sticky;
     top: 0; left: 0; right: 0;
-    z-index: 10;
+    z-index: 1000;
     background-color: $--white;
+
+    &.active{
+        transition: 0.2s linear;
+        box-shadow: $--box-shadow;
+    }
 
     .flex{
         padding-top: 1.5rem;
@@ -86,6 +91,13 @@ section{
     cursor: pointer;
     color: $--black;
     display: none;
+}
+
+.home{
+    min-height: 100vh;
+    background: url('../img/bg_novo.png') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* media queries */
