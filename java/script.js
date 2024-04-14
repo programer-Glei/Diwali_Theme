@@ -25,5 +25,5 @@ home.onmousemove = (e) =>{
     let x = (window.innerWidth - e.pageX * 2) / 90;
     let y = (window.innerHeight - e.pageY * 2) / 90;
 
-    homeImg.style.transform = `translate()`
+    homeImg.style.transform = `translateX(${x}px) translateY(${y}px)`;
 }

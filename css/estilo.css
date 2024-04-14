@@ -120,6 +120,9 @@ section {
   html {
     font-size: 55%;
   }
+  .home .home-img {
+    height: 15rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -156,11 +159,17 @@ section {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
+  .home {
+    min-height: 85vh;
+  }
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .home {
+    min-height: 55vh;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
