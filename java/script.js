@@ -17,3 +17,13 @@ window.onscroll = () =>{
         header.classList.remove('active');
     }
 }
+
+let home = document.querySelector('#home');
+
+home.onmousemove = (e) =>{
+    let homeImg = home.querySelector('.home-img');
+    let x = (window.innerWidth - e.pageX * 2) / 90;
+    let y = (window.innerHeight - e.pageY * 2) / 90;
+
+    homeImg.style.transform = `translate()`
+}

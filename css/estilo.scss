@@ -98,6 +98,17 @@ section{
     background: url('../img/bg_novo.png') no-repeat;
     background-size: cover;
     background-position: center;
+    /*background-position-y: -35rem;*/
+    /*background-position-x: center;*/
+    text-align: center;
+    padding: 2rem;
+
+    .home-img{
+        height: 30rem;
+        border: 1px solid red;
+        margin-top: 5vh;
+        transition: 0.2s linear;
+    }
 }
 
 /* media queries */
