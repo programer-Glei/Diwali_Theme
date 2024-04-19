@@ -27,3 +27,9 @@ home.onmousemove = (e) =>{
 
     homeImg.style.transform = `translateX(${x}px) translateY(${y}px)`;
 }
+
+home.onmouseleave = () =>{
+    let homeImg = home.querySelector('.home-img');
+
+    homeImg.style.transform = `translateX(0px) translateY(0px)`;
+}
