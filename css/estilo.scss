@@ -111,6 +111,38 @@ section{
     }
 }
 
+.about{
+
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        align-items: center;
+
+        &:last-child{
+            flex-wrap: wrap-reverse;
+            margin-top: 2rem;
+        }
+
+        .image{
+            flex: 1 1 40rem;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .content{
+            flex: 1 1 40rem;
+
+            h3{
+                font-size: 4rem;
+                color: $--orange;
+            }
+        }
+    }
+}
+
 /* media queries */
 @media(max-width:991px){
     html{

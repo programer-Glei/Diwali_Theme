@@ -115,6 +115,45 @@ section {
   transition: 0.2s linear;
 }
 
+.about .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .flex:last-child {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  margin-top: 2rem;
+}
+
+.about .flex .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.about .flex .image img {
+  width: 100%;
+}
+
+.about .flex .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.about .flex .content h3 {
+  font-size: 4rem;
+  color: #FF4600;
+}
+
 /* media queries */
 @media (max-width: 991px) {
   html {
