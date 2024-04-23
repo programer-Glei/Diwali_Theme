@@ -9,7 +9,7 @@ $--light-bg: #f4f4f4;
 $--box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
 $--border: 0.1rem solid rgba(0,0,0,0.3);
 $--gradient: linear-gradient(90deg, $--yellow, $--orange);
-$--gradient: linear-gradient(90deg, $--orange, $--yellow);
+$--gradient-hover: linear-gradient(90deg, $--orange, $--yellow);
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -46,6 +46,21 @@ section{
     padding: 3rem 2rem;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    background: $--gradient;
+    border-radius: 5rem;
+    font-size: 1.8rem;
+    color: $--white;
+
+    &:hover{
+        background: $--gradient-hover;
+    }
 }
 
 .header{
@@ -122,6 +137,10 @@ section{
         &:last-child{
             flex-wrap: wrap-reverse;
             margin-top: 2rem;
+
+            .content{
+                text-align: right;
+            }
         }
 
         .image{
@@ -138,6 +157,14 @@ section{
             h3{
                 font-size: 4rem;
                 color: $--orange;
+                margin-bottom: 0.5rem;
+            }
+
+            p{
+                padding: 1rem 0;
+                font-size: 1.8rem;
+                color: $--light-color;
+                line-height: 1.8;
             }
         }
     }
